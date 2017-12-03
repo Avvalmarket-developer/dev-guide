@@ -55,7 +55,7 @@ master_doc = 'index'
 # General information about the project.
 project = u'Avvalmarket'
 copyright = u'2016, Avvalmarket'
-author = u'Avvalmarket'
+author = u'Avvalmarket-developer'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -228,9 +228,13 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
+#latex_documents = [
+#    (master_doc, 'Avvalmarket.tex', u'Avvalmarket Documentation',
+#     u'Avvalmarket', 'manual'),
+#]
 latex_documents = [
-    (master_doc, 'Avvalmarket.tex', u'Avvalmarket Documentation',
-     u'Avvalmarket', 'manual'),
+    (master_doc, 'Avvalmarket-developer.tex', u'Avvalmarket Documentation',
+     u'Avvalmarket-developer', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -258,8 +262,12 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
+#man_pages = [
+#    (master_doc, 'avvalmarket', u'Avvalmarket Documentation',
+#     [author], 1)
+#]
 man_pages = [
-    (master_doc, 'avvalmarket', u'Avvalmarket Documentation',
+    (master_doc, 'Avvalmarket-developer', u'Avvalmarket Documentation',
      [author], 1)
 ]
 
@@ -272,9 +280,15 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
+#texinfo_documents = [
+#    (master_doc, 'Avvalmarket', u'Avvalmarket Documentation',
+#     author, 'Avvalmarket', 'One line description of project.',
+#     'Miscellaneous'),
+#]
+
 texinfo_documents = [
-    (master_doc, 'Avvalmarket', u'Avvalmarket Documentation',
-     author, 'Avvalmarket', 'One line description of project.',
+    (master_doc, 'Avvalmarket-developer', u'Avvalmarket Documentation',
+     author, 'Avvalmarket-developer', 'One line description of project.',
      'Miscellaneous'),
 ]
 
@@ -361,7 +375,8 @@ epub_exclude_files = ['search.html']
 #epub_use_index = True
 
 # app setup hook
-github_doc_root = 'https://github.com/avvalmarket/dev-guide/tree/master/doc/'
+#github_doc_root = 'https://github.com/avvalmarket/dev-guide/tree/master/doc/'
+github_doc_root = 'https://github.com/Avvalmarket-developer/dev-guide/tree/master/docs/'
 def setup(app):
     app.add_config_value('recommonmark_config', {
             'url_resolver': lambda url: github_doc_root + url,
