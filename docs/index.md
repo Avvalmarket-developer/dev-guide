@@ -8,8 +8,10 @@
 
 ```eval_rst
 .. toctree::
+   :maxdepth: 2
    :caption: پرداخت-درون-برنامه-ای
    :name: پرداخت-درون-برنامه-ای
+   
    in-app
 
 ```
